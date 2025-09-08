@@ -1,0 +1,251 @@
+/* Global Styles */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005999;
+}
+
+/* Navbar */
+nav {
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+nav .site-title h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav .site-title p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+}
+
+/* Blog List */
+.blogs h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+
+.snippet {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Create Blog Form */
+.create-blog form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005999;
+}
+
+/* About Page */
+.about h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about p {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 404 Page */
+.not-found {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 3rem;
+    color: #cc0000;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Page container */
+.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Heading */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* Blog link card */
+.single {
+  display: block;
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.single:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Blog title */
+.single .title {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.single:hover .title {
+  color: #3498db;
+}
+
+/* Blog snippet */
+.single .snippet {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Empty state */
+p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #777;
+  text-align: center;
+}
