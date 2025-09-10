@@ -1,10 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const blogRoutes = require('./routes/blogRoutes.js')
 const app = express();
 
-const dbURI = 'mongodb+srv://reevans-blogging:test123@cluster0.3lse2nv.mongodb.net/reevans-blog';
+const dbURI = process.env.DATABASE_URL;
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err));

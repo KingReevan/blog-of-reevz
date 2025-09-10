@@ -10,6 +10,7 @@
   "author": "Reevan D Mello",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.2",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "lodash": "^4.17.21",
